@@ -1,4 +1,108 @@
-ul {
-	margin: 0 auto;
 
+
+.container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'menu menu menu menu menu menu'
+    'lowerMenu lowerMenu lowerMenu lowerMenu lowerMenu lowerMenu'
+    'card card card card card card'
+    'techno techno techno techno techno techno'
+    ;
+}
+
+header {
+	background: #275db5;
+	grid-area: header;
+	text-align: center;
+	font-size: 20px;
+	top: 0;
+	position: sticky;
+	position: -webkit-sticky;
+	border: 2px solid black
+ }
+
+header ul li {
+	display: inline-block;
+	padding: 10px;
+}
+
+header ul li:hover {
+	background: silver;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+.topContent {
+	background: #275db5;
+	width: 100%;
+	grid-area: menu;
+	padding: 40px 5px;
+	text-align: center;
+	display: inline-block;
+}
+
+.leftText {
+	display: inline-block;
+	vertical-align: top;
+	width: 200px;
+}
+
+img {
+	display: inline-block;
+}
+
+/* upper content finished */
+
+h3 {
+	font-size: 20px;
+	font-weight: bold;
+	padding: 2%;
+}
+
+h4 {
+	font-size: 20px;
+	font-weight: bold;
+	padding: 1%;
+} 
+span {
+	color: orange;
+}
+
+.lowerContentText {
+	grid-area: lowerMenu;
+}
+
+.menuText {
+	text-align: center;
+	padding: 15px;
+}
+
+.cards {
+ 	grid-area: card;
+ 	text-align: center;
+}
+
+.logo {
+	display: inline-block;
+	margin: 1%;
+}
+
+.technology {
+	grid-area: techno;
+ 	text-align: center;
+ 	background: #275db5;
+ 	margin: 2% 0;
+ 	padding: 20px;
+}
+
+.textSpace {
+	margin-right: 10%;
+}
+
+.textSpace ul li{
+	padding: 5px;
 }
